@@ -1,0 +1,52 @@
+Version 4
+SymbolType CELL
+LINE Normal -48 -16 -48 -53
+LINE Normal -32 -16 -48 -16
+LINE Normal -48 0 -32 0
+LINE Normal -48 53 -48 0
+LINE Normal -48 16 -48 53
+LINE Normal -32 16 -48 16
+LINE Normal -48 0 -38 -4
+LINE Normal -38 4 -48 0
+LINE Normal -38 -4 -38 4
+LINE Normal -32 -11 -32 -21
+LINE Normal -32 5 -32 -5
+LINE Normal -32 21 -32 11
+LINE Normal -28 21 -28 -21
+LINE Normal 48 -43 48 -53
+LINE Normal 30 -24 -8 -24
+LINE Normal 30 24 30 -24
+LINE Normal -8 24 30 24
+LINE Normal -8 -24 -8 24
+LINE Normal -8 16 -28 16
+LINE Normal 39 0 30 0
+LINE Normal 11 -43 48 -43
+LINE Normal 11 -24 11 -43
+LINE Normal 11 43 11 24
+LINE Normal 11 43 48 43
+LINE Normal 48 53 48 43
+LINE Normal 14 -10 18 -5
+LINE Normal 8 -10 14 -10
+LINE Normal 4 -5 8 -10
+LINE Normal 4 5 4 -5
+LINE Normal 8 10 4 5
+LINE Normal 14 10 8 10
+LINE Normal 18 5 14 10
+RECTANGLE Normal 80 80 -80 -80
+TEXT -96 0 VCenter 2 TNY263
+WINDOW 0 0 -96 Center 2
+PIN -48 -80 VRIGHT 8
+PINATTR PinName D
+PINATTR SpiceOrder 1
+PIN 80 0 RIGHT 8
+PINATTR PinName EN
+PINATTR SpiceOrder 2
+PIN 48 80 VLEFT 8
+PINATTR PinName G
+PINATTR SpiceOrder 3
+PIN -48 80 VLEFT 8
+PINATTR PinName S
+PINATTR SpiceOrder 4
+PIN 48 -80 VRIGHT 8
+PINATTR PinName V
+PINATTR SpiceOrder 5

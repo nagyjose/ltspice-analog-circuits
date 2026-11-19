@@ -1,0 +1,29 @@
+* SPICE cell: Dual-gate JFET BF2040
+* Piny: D G1 G2 S
+
+.subckt BF2040A D G1 G2 S
+M1 D NINT G2 0 BF2040NM
+M2 NINT S G1 0 BF2040NM
+.ends BF2040A
+
+* BF2040B – zjednodušený model tetrody (jeden MOS řízený G1, G2 působí přes bias)
+.subckt BF2040B D G1 G2 S
+RGC G2 G1 10Meg
+M1 D G1 S 0 BF2040NM
+.ends BF2040B
+
+* Jednoduchý JFET model (Level 1)
+.model BF2040NM NMOS (
++ VTO=0.6              ; Threshold voltage (typ z datasheetu)
++ KP=0.02              ; Transconductance parameter ≈ BETA (gfs = 2*KP*ID)
+*+ LAMBDA=0.01          ; Channel length modulation (výstupní vodivost)
++ CGS=3.4p             ; Gate1 capacitance (typ. 2.9–3.4 pF)
++ CGD=1.6p             ; Output capacitance (Cds)
++ RD=10                ; Drain resistance
++ RS=10                ; Source resistance
++ IS=1e-14             ; Saturation current (pro body diode)
++ PB=0.6               ; Built-in potential
++ TOX=100n             ; Odhad pro reálné rozměry
++ UO=400               ; Mobilita (přibližná pro vysokofrekv. NMOS)
++ NSUB=1e15            ; Substrátová koncentrace (nepovinné)
++ LEVEL=1)

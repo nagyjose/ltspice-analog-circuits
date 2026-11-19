@@ -1,0 +1,53 @@
+# ==========================================
+# LTspice Simulation Outputs & Artifacts
+# ==========================================
+# Raw waveform data files (can easily reach multiple gigabytes)
+*.raw
+*.op.raw
+
+# Fast Fourier Transform output files
+*.fft
+
+# Simulation execution logs
+*.log
+
+# Simulation measurement & impedance plot temporary files
+*.imp
+*.fail
+*.res
+*.plt
+*.bak
+
+# Automatically generated netlists
+*.net
+# Retain netlists explicitly required by Python testbenches
+!Current_limiter_NPN_tb.net
+!rc2.net
+
+# Batch simulation output directories
+current_lim_out/
+temp_batch3/
+test_rc/
+test_rc_2/
+test_rc_mc/
+
+# ==========================================
+# Python & Environment
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# ==========================================
+# Operating System Artifacts
+# ==========================================
+[Dd]esktop.ini
+Thumbs.db
+ehthumbs.db
+.DS_Store

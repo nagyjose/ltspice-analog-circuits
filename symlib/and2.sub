@@ -1,0 +1,24 @@
+* Adaptivní 2vstupové AND hradlo
+* Vývody: 1=A, 2=B, 3=OUT, 4=Vdd, 5=GND
+
+.subckt and2 1 2 3 4 5
+* 1 = vstup A
+* 2 = vstup B
+* 3 = výstup
+* 4 = napájení Vdd
+* 5 = zem GND
+
+* Mezní napětí pro logickou úroveň = Vdd / 2
+E_vdd2 vdd2 0 VALUE = { V(4)/2 }
+
+* Detekce logických úrovní A a B: 1 pokud > Vdd/2, jinak 0
+EA_logic na 0 VALUE = { V(1) > V(vdd2) ? 1 : 0 }
+EB_logic nb 0 VALUE = { V(2) > V(vdd2) ? 1 : 0 }
+
+* Logická AND operace
+Eand nand 0 VALUE = { V(na) * V(nb) }
+
+* Výstup převedený zpět na rozsah 0–Vdd
+Eout 3 5 VALUE = { V(nand) * V(4) }
+
+.ends and2

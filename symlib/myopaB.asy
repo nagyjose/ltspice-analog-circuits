@@ -1,0 +1,21 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 48 -32 -48
+LINE Normal 48 0 -32 48
+LINE Normal -32 -48 48 0
+LINE Normal -22 21 -12 21
+LINE Normal -22 -20 -12 -20
+LINE Normal -17 -15 -17 -25
+WINDOW 3 6 36 Left 2
+WINDOW 0 7 -39 Left 2
+SYMATTR Value myopaB
+SYMATTR Prefix X
+PIN -32 16 NONE 8
+PINATTR PinName 2
+PINATTR SpiceOrder 2
+PIN -32 -16 NONE 8
+PINATTR PinName 1
+PINATTR SpiceOrder 1
+PIN 48 0 NONE 8
+PINATTR PinName 3
+PINATTR SpiceOrder 3

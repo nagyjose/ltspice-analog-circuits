@@ -1,0 +1,17 @@
+* Ideální operační zesilovač se saturací - subcircuit
+* Vývody: 1=V+, 2=V-, 3=Vout, 4=Vdd, 5=Vss
+
+.subckt opaVcc 1 2 3 4 5
+* 1 = neinvertující vstup (V+)
+* 2 = invertující vstup (V-)
+* 3 = výstup
+* 4 = kladné napájení (Vdd)
+* 5 = záporné napájení (Vss)
+
+* Vnitřní vysokozesílený stupeň
+Eamp nraw 0 VALUE = {1e6*(V(1)-V(2))}
+
+* Výstupní omezovač (saturace na Vdd a Vss)
+Eclip 3 0 VALUE = {MAX(V(5), MIN(V(4), V(nraw)))}
+
+.ends opaVcc

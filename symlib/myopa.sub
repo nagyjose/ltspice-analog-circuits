@@ -1,0 +1,5 @@
+* Ideal Op-Amp 
+*             V- V+ Out 
+.subckt myopa 1  2  3 
+g1 3 0 2 1 100Meg 
+.ends myopamp

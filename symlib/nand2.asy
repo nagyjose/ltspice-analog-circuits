@@ -1,0 +1,27 @@
+Version 4
+SymbolType CELL
+LINE Normal -32 -32 0 -32
+LINE Normal -32 32 -32 -32
+LINE Normal 0 32 -32 32
+ARC Normal -48 32 48 -32 0 32 0 -32
+ARC Normal 48 8 64 -8 64 -8 64 -8
+TEXT -16 -2 Left 2 &
+WINDOW 3 16 42 Left 2
+WINDOW 0 16 -46 Left 2
+SYMATTR Value nand2
+SYMATTR Prefix X
+PIN -32 -16 NONE 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN -32 16 NONE 8
+PINATTR PinName B
+PINATTR SpiceOrder 2
+PIN 64 0 NONE 8
+PINATTR PinName Y
+PINATTR SpiceOrder 3
+PIN 0 -32 NONE 8
+PINATTR PinName Vcc
+PINATTR SpiceOrder 4
+PIN 0 32 NONE 8
+PINATTR PinName Vee
+PINATTR SpiceOrder 5

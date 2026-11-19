@@ -1,0 +1,15 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal 64 48 -64 -32
+TEXT 64 -46 Right 2 78L05
+WINDOW 0 -64 -46 Left 2
+SYMATTR Prefix X
+PIN -64 0 LEFT 8
+PINATTR PinName In
+PINATTR SpiceOrder 1
+PIN 0 48 BOTTOM 8
+PINATTR PinName Adj
+PINATTR SpiceOrder 2
+PIN 64 0 RIGHT 8
+PINATTR PinName Out
+PINATTR SpiceOrder 3

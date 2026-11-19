@@ -1,0 +1,36 @@
+Version 4
+SymbolType CELL
+LINE Normal -48 16 -1 16
+LINE Normal -48 -16 -1 -16
+LINE Normal -1 -6 -1 -27
+LINE Normal -1 26 -1 5
+LINE Normal 7 26 7 -27
+LINE Normal 12 26 7 26
+LINE Normal 12 -27 12 26
+LINE Normal 7 -27 12 -27
+LINE Normal 32 -16 12 -16
+LINE Normal 32 -64 32 -16
+LINE Normal 32 0 12 0
+LINE Normal 32 16 12 16
+LINE Normal 32 0 32 64
+LINE Normal 32 16 32 0
+LINE Normal 23 -7 12 0
+LINE Normal 23 6 23 -7
+LINE Normal 12 0 23 6
+CIRCLE Normal 54 40 -27 -40
+WINDOW 0 48 -32 Left 2
+WINDOW 3 48 32 Left 2
+SYMATTR Prefix X
+SYMATTR Value BF2040
+PIN -48 -16 NONE 8
+PINATTR PinName G1
+PINATTR SpiceOrder 2
+PIN -48 16 NONE 8
+PINATTR PinName G2
+PINATTR SpiceOrder 3
+PIN 32 -64 NONE 8
+PINATTR PinName D
+PINATTR SpiceOrder 1
+PIN 32 64 NONE 8
+PINATTR PinName S
+PINATTR SpiceOrder 4

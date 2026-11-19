@@ -1,0 +1,29 @@
+Version 4
+SymbolType CELL
+LINE Normal -32 32 -32 -32
+LINE Normal 32 0 -32 32
+LINE Normal -32 -32 32 0
+LINE Normal 0 -32 0 -16
+LINE Normal 0 16 0 32
+LINE Normal -26 16 -16 16
+LINE Normal -26 -16 -16 -16
+LINE Normal -21 -11 -21 -21
+WINDOW 3 15 21 Left 2
+WINDOW 0 15 -24 Left 2
+SYMATTR Prefix X
+SYMATTR Value opaVcc
+PIN -32 16 NONE 8
+PINATTR PinName Vin
+PINATTR SpiceOrder 1
+PIN -32 -16 NONE 8
+PINATTR PinName Vip
+PINATTR SpiceOrder 2
+PIN 32 0 NONE 8
+PINATTR PinName Vo
+PINATTR SpiceOrder 3
+PIN 0 -32 NONE 8
+PINATTR PinName Vcc
+PINATTR SpiceOrder 4
+PIN 0 32 NONE 8
+PINATTR PinName Vee
+PINATTR SpiceOrder 5
